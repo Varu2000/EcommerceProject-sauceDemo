@@ -19,6 +19,7 @@ public class Test_001 extends BasePage {
 
 	String[] names = { "Sauce Labs Backpack", "Sauce Labs Bolt T-Shirt", "Sauce Labs Onesie",
 			"Test.allTheThings() T-Shirt (Red)" };
+	
 	List<String> proName = Arrays.asList(names);
 
 	@BeforeTest

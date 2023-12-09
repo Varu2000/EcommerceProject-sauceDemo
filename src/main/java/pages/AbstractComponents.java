@@ -11,19 +11,19 @@ public class AbstractComponents {
 
 	WebDriver driver;
 
-
 	public AbstractComponents(WebDriver driver) {
-		this.driver=driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(xpath = "//a[@class='shopping_cart_link']")
 	WebElement cartBtn;
-	
+
 	public void cartPage() {
 		cartBtn.click();
-		
+
 	}
+
 	public void waitForElement(WebElement ele) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(ele));
